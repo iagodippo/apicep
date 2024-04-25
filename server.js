@@ -1,6 +1,6 @@
 const express = require('express')
 const pool = require('./db')
-const port = 3000
+const port = process.env.PORT || 5002
 
 const app = express()
 app.set('trust proxy', true)
